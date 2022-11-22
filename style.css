@@ -47,6 +47,10 @@ body{
     border-radius: 50%;
     overflow: hidden;
 }
+img{
+    display: block;
+    width: 100%;
+}
 .btn{
     display: inline-block;
     padding: var(--btn-padding);
@@ -96,8 +100,17 @@ nav .search-bar{
 }
 nav .search-bar input[type="search"]{
     background:transparent;
-    width: 30vh;
+    width: 30vw;
     margin-left: 1rem;
     font-size: 0.9rem;
     color:var(--color-dark);
+}
+nav .search-bar input[type="search"]::placeholder{
+    color:var(--color-gray);
+
+}
+nav .create{
+    display: flex;
+    align-items:center;
+    gap: 2rem;
 }
